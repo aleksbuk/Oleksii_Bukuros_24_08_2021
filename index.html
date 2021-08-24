@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title> Movies Gallery</title>
+</head>
+<body>
+<div class="container">
+    <main class="main">
+        <h1 class="h1">Movies Gallery</h1>
+        <div class="options">
+            <form class="select-form">
+                <select id="ganres-select">
+                    <option value="default" disabled selected>Select Genre</option>
+                    <option value="all">all</option>
+                </select>
+            </form>
+            <div class="view-block">
+                <p>View as: </p>
+                <i class="fas fa-th"></i>
+                <i class="fas fa-th-list"></i>
+            </div>
+        </div>
+        <section class="movies-card"></section>
+        <section class="movies-list"></section>
+    </main>
+    <aside class="aside">
+        <h2 class="h2"><i class="fas fa-star star"></i> Favorite list</h2>
+        <div class="fav-list"></div>
+    </aside>
+</div>
+
+<div class="details-modal">
+    <div class="modal-window">
+        <button type="button" class="close-btn"><i class="fas fa-times"></i></button>
+        <div class="left-side"></div>
+        <div class="right-side"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+$ git clone https://github.com/aleksbuk/repo.git
